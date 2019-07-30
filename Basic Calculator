@@ -1,0 +1,18 @@
+
+meal = input("How much was your meal? ")
+meal = int(meal)
+happiness = input("How was your service? Bad, OK, Good, Great ")
+happiness = str.upper(happiness)
+if happiness == "BAD":
+  tip = .10
+elif happiness == "OK":
+  tip = .15
+elif happiness == "GOOD":
+  tip = .2
+elif happiness == "GREAT":
+  tip = .25
+else:
+  print("Please pick another!")
+tip_amount = meal*tip
+total = tip_amount + meal
+print("Your tip amount is "+str(tip_amount) + " your meal total (including tip) is "+str(total))
